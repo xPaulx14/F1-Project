@@ -9,14 +9,18 @@
 
 .track-card{
     width: 300px;
-    background: white;
     border-radius: 15px;
     overflow: hidden;
-    padding: 0;
+    padding: 0px;
     transition: 0.3s;
     border: 4px solid;
     margin-top: 0;
     position: relative;
+    color: #ffff;
+}
+
+.track-name{
+    padding: 15px;
 }
 
 .track-card:hover{
@@ -24,10 +28,12 @@
     transform: translateY(-5px);
 }
 
-.track-card > img{
+.track-card > img {
     width: 100%;
     height: 250px;
-    object-fit: cover;
+    object-fit: contain;
+    background-color: black;
+    box-sizing: border-box;
 }
 
 .overlay-track{
@@ -52,4 +58,16 @@
     padding-left: 10%;
     padding-top: 10%;
     margin-top: 20px;
+}
+
+.track-text p {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 6px 0;
+    padding-right: 10%;
+}
+
+.track-text p span:first-child::after {
+    content: ":";
 }

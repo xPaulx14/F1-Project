@@ -1,6 +1,7 @@
-fetch('/assets/data/tracks-data.json')
+fetch('/assets/data/track-data.json')
     .then(response => response.json())
     .then(data => {
+        console.log(data);
         const cards = document.querySelectorAll('.track-card');
 
         cards.forEach(card => {
