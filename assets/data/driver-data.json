@@ -1,0 +1,68 @@
+{
+  "leclerc": {
+    "team": "Ferrari", "titles": 0, "races": 153, "wins": 8, "podiums": 48, "poles": 27, "points": 1287, "dnf": 34
+  },
+  "hamilton": {
+    "team": "Ferrari", "titles": 7, "races": 353, "wins": 104, "podiums": 197, "poles": 104, "points": 4795, "dnf": 49
+  },
+  "verstappen": {
+    "team": "Red Bull", "titles": 4, "races": 197, "wins": 62, "podiums": 112, "poles": 40, "points": 3068, "dnf": 46
+  },
+  "hadjar": {
+    "team": "Red Bull", "titles": 0, "races": 24, "wins": 0, "podiums": 1, "poles": 0, "points": 51, "dnf": 2
+  },
+  "norris": {
+    "team": "McLaren", "titles": 1, "races": 148, "wins": 12, "podiums": 36, "poles": 12, "points": 1181, "dnf": 18
+  },
+  "piastri": {
+    "team": "McLaren", "titles": 0, "races": 48, "wins": 9, "podiums": 22, "poles": 7, "points": 826, "dnf": 5
+  },
+  "russell": {
+    "team": "Mercedes", "titles": 0, "races": 148, "wins": 4, "podiums": 22, "poles": 5, "points": 912, "dnf": 12
+  },
+  "antonelli": {
+    "team": "Mercedes", "titles": 0, "races": 24, "wins": 0, "podiums": 3, "poles": 1, "points": 150, "dnf": 4
+  },
+  "alonso": {
+    "team": "Aston Martin", "titles": 2, "races": 399, "wins": 32, "podiums": 106, "poles": 22, "points": 2376, "dnf": 97
+  },
+  "stroll": {
+    "team": "Aston Martin", "titles": 0, "races": 172, "wins": 0, "podiums": 3, "poles": 1, "points": 316, "dnf": 28
+  },
+  "sainz": {
+    "team": "Williams", "titles": 0, "races": 201, "wins": 4, "podiums": 27, "poles": 6, "points": 1166, "dnf": 38
+  },
+  "albon": {
+    "team": "Williams", "titles": 0, "races": 98, "wins": 0, "podiums": 0, "poles": 0, "points": 254, "dnf": 22
+  },
+  "gasly": {
+    "team": "Alpine", "titles": 0, "races": 173, "wins": 1, "podiums": 4, "poles": 0, "points": 430, "dnf": 45
+  },
+  "colapinto": {
+    "team": "Alpine", "titles": 0, "races": 17, "wins": 0, "podiums": 0, "poles": 0, "points": 5, "dnf": 3
+  },
+  "hulkenberg": {
+    "team": "Audi", "titles": 0, "races": 228, "wins": 0, "podiums": 1, "poles": 1, "points": 560, "dnf": 52
+  },
+  "bortoleto": {
+    "team": "Audi", "titles": 0, "races": 24, "wins": 0, "podiums": 0, "poles": 0, "points": 19, "dnf": 5
+  },
+  "perez": {
+    "team": "Cadillac", "titles": 0, "races": 281, "wins": 13, "podiums": 54, "poles": 3, "points": 1649, "dnf": 58
+  },
+  "bottas": {
+    "team": "Cadillac", "titles": 0, "races": 257, "wins": 10, "podiums": 67, "poles": 20, "points": 1792, "dnf": 43
+  },
+  "bearman": {
+    "team": "Haas", "titles": 0, "races": 25, "wins": 0, "podiums": 0, "poles": 0, "points": 54, "dnf": 6
+  },
+  "ocon": {
+    "team": "Haas", "titles": 0, "races": 173, "wins": 1, "podiums": 3, "poles": 0, "points": 465, "dnf": 35
+  },
+  "lawson": {
+    "team": "Racing Bulls", "titles": 0, "races": 24, "wins": 0, "podiums": 0, "poles": 0, "points": 38, "dnf": 5
+  },
+  "lindblad": {
+    "team": "Racing Bulls", "titles": 0, "races": 0, "wins": 0, "podiums": 0, "poles": 0, "points": 0, "dnf": 0
+  }
+}

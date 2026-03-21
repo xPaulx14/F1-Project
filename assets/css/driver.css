@@ -1,0 +1,173 @@
+/* ── Grid ── */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    gap: 30px;
+    padding: 20px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+/* ── Driver Card ── */
+.driver-card {
+    width: 300px;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 0;
+    transition: 0.3s;
+    border: 4px solid;
+    margin-top: 0;
+    position: relative;
+}
+
+.driver-card:hover {
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
+    transform: translateY(-5px);
+}
+
+.driver-card > img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* ── Driver Name ── */
+.driver-name {
+    padding: 15px;
+}
+
+.driver-name h4 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.driver-name p {
+    margin-top: 5px;
+    color: rgb(0, 0, 0);
+}
+
+/* ── Overlay ── */
+.overlay-driver {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba(20, 18, 28, 0.97);
+}
+
+.driver-card:hover .overlay-driver {
+    opacity: 1;
+}
+
+.driver-text {
+    color: white;
+    padding-left: 10%;
+    padding-top: 10%;
+    margin-top: 20px;
+}
+
+.driver-text p {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 6px 0;
+    padding-right: 10%;
+}
+
+.driver-text p:last-child {
+    border-bottom: none;
+}
+
+/* ── Card Header (Flag + Number) ── */
+.card-header-info {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    z-index: 1;
+}
+
+.card-rank-info {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+.driver-flag {
+    width: 24px;
+    height: 16px;
+    object-fit: cover;
+}
+
+.driver-number {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.driver-card:hover .card-header-info,
+.driver-card:hover .card-rank-info {
+    opacity: 0;
+}
+
+/* ── Ranking Colors ── */
+.rank-gold { color: #FFD700; font-weight: 700; }
+.rank-silver { color: #C0C0C0; font-weight: 700; }
+.rank-bronze { color: #CD7F32; font-weight: 700; }
+.rank { color: white; font-weight: 700; }
+
+/* ── Filter Bar ── */
+.hidden { display: none; }
+
+.filter-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    margin-top: 80px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.filter-bar button {
+    color: white;
+    padding: 10px 17px;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    appearance: none;
+}
+
+.filter-bar .ferrari { background-color: #DC0000; border-color: #DC0000; }
+.filter-bar .red-bull { background-color: #223267; border-color: #223267; }
+.filter-bar .aston-martin { background-color: #006F62; border-color: #006F62; }
+.filter-bar .mercedes { background-color: #00D2BE; border-color: #00D2BE; }
+.filter-bar .mclaren { background-color: #FF8700; border-color: #FF8700; }
+.filter-bar .alpine { background-color: #0090FF; border-color: #0090FF; }
+.filter-bar .williams { background-color: #005AFF; border-color: #005AFF; }
+.filter-bar .haas { background-color: #B6BABD; border-color: #B6BABD; }
+.filter-bar .audi { background-color: #9b1c00; border-color: #9b1c00; }
+.filter-bar .vcarb { background-color: #265ad9; border-color: #265ad9; }
+.filter-bar .caddilac { background-color: #79797c; border-color: #79797c; }
+
+.filter-bar button.active-filter.ferrari { background-color: transparent; }
+.filter-bar button.active-filter.red-bull { background-color: transparent; }
+.filter-bar button.active-filter.aston-martin { background-color: transparent; }
+.filter-bar button.active-filter.mercedes { background-color: transparent; }
+.filter-bar button.active-filter.mclaren { background-color: transparent; }
+.filter-bar button.active-filter.alpine { background-color: transparent; }
+.filter-bar button.active-filter.williams { background-color: transparent; }
+.filter-bar button.active-filter.haas { background-color: transparent; }
+.filter-bar button.active-filter.audi { background-color: transparent; }
+.filter-bar button.active-filter.vcarb { background-color: transparent; }
+.filter-bar button.active-filter.caddilac { background-color: transparent; }

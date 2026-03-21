@@ -1,0 +1,63 @@
+/* ── Team Colors ── */
+.ferrari { color: #DC0000; border-color: #DC0000; }
+.red-bull { color: #223267; border-color: #223267; }
+.aston-martin { color: #006F62; border-color: #006F62; }
+.mercedes { color: #00D2BE; border-color: #00D2BE; }
+.mclaren { color: #FF8700; border-color: #FF8700; }
+.alpine { color: #0090FF; border-color: #0090FF; }
+.williams { color: #005AFF; border-color: #005AFF; }
+.haas { color: #B6BABD; border-color: #B6BABD; }
+.audi { color: #9b1c00; border-color: #9b1c00; }
+.vcarb { color: #265ad9; border-color: #265ad9; }
+.caddilac { color: #79797c; border-color: #79797c; }
+
+/* ── Body ── */
+body {
+    margin: 0;
+    font-family: 'Satoshi', sans-serif;
+    background: #0D0C11;
+    padding: 20px;
+    padding-top: 80px;
+    box-sizing: border-box;
+    font-size: large;
+}
+
+/* ── Navbar ── */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #13111A;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    font-size: 20px;
+}
+
+ul li {
+    margin: 0 10px;
+}
+
+ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.active-navbar {
+    text-shadow: 0 8px 16px rgba(255, 255, 255, 0.5);
+}
+
+/* ── Typography ── */
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
