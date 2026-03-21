@@ -30,7 +30,6 @@
     object-fit: cover;
 }
 
-/* ── Driver Name ── */
 .driver-name {
     padding: 15px;
 }
@@ -136,7 +135,7 @@
 
 .filter-bar button {
     color: white;
-    padding: 10px 17px;
+    padding: 10px 11px;
     border: 1px solid;
     border-radius: 5px;
     cursor: pointer;
