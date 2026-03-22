@@ -23,7 +23,7 @@ body {
 }
 
 /* ── Navbar ── */
-ul {
+.navbar {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -38,11 +38,11 @@ ul {
     font-size: 20px;
 }
 
-ul li {
+.navbar li {
     margin: 0 10px;
 }
 
-ul li a {
+.navbar li a {
     display: block;
     color: white;
     text-align: center;
