@@ -20,6 +20,7 @@ body {
     padding-top: 80px;
     box-sizing: border-box;
     font-size: large;
+     overflow-y: scroll;
 }
 
 /* ── Navbar ── */
