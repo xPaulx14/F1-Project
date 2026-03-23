@@ -66,6 +66,7 @@
     margin: 0;
     padding: 6px 0;
     padding-right: 10%;
+    font-size: 17px;
 }
 
 .track-text p span:first-child::after {
