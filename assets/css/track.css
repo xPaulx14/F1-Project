@@ -80,3 +80,12 @@
         width: 100%;
     }
 }
+
+@media (max-width: 1300px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .track-card {
+        width: 100%;
+    }
+}
