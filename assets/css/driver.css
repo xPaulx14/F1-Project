@@ -168,28 +168,23 @@
 .filter-bar button.active-filter.vcarb { background-color: transparent; }
 .filter-bar button.active-filter.caddilac { background-color: transparent; }
 
-@media(max-width: 800px){
+@media (max-width: 1300px) {
     .grid-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
     .driver-card, .track-card {
         width: 100%;
     }
-
     .filter-bar button {
         padding: 10px 10px;
     }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1000px) {
     .grid-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
-    .track-card {
-        width: 100%;
-    }
-
     .filter-bar button {
-        padding: 10px 10px;
+        padding: 10px 2%;
     }
 }
