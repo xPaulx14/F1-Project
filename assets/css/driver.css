@@ -168,7 +168,7 @@
 .filter-bar button.active-filter.vcarb { background-color: transparent; }
 .filter-bar button.active-filter.caddilac { background-color: transparent; }
 
-@media(max-width: 650px){
+@media(max-width: 800px){
     .grid-container {
         grid-template-columns: 1fr;
     }
