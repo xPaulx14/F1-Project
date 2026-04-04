@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/login-register.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <!-- Register Formular (wird zuerst angezeigt) -->
+    <div class="login" id="register-form">
+        <h2>Register</h2>
+        <label for="register-username">Username</label>
+        <input type="text" id="register-username" placeholder="Username" required>
+
+        <label for="register-email">Email</label>
+        <input type="email" id="register-email" placeholder="Email" required>
+
+        <label for="register-password">Password</label>
+        <input type="password" id="register-password" placeholder="Password" required>
+
+        <button id="register-btn">Register</button>
+        <p>Already have an account? <a href="#" id="show-login">Login Now!</a></p>
+        <p id="register-message"></p>
+    </div>
+
+    <!-- Login Formular (versteckt am Anfang) -->
+    <div class="login" id="login-form" style="display: none;">
+        <h2>Login</h2>
+        <label for="login-email">Email</label>
+        <input type="email" id="login-email" placeholder="Email" required>
+
+        <label for="login-password">Password</label>
+        <input type="password" id="login-password" placeholder="Password" required>
+
+        <button id="login-btn">Login</button>
+        <p>Don't have an account? <a href="#" id="show-register">Register Now!</a></p>
+        <p id="login-message"></p>
+    </div>
+
+    <!-- Reihenfolge wichtig: zuerst Supabase CDN, dann supabase.js, dann login.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="/assets/js/supabase.js"></script>
+    <script src="/assets/js/navbar.js"></script>
+    <script src="/assets/js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    padding: 32px;
+    border: 2px solid black;
+    border-radius:15px;
+    background-color: #13111a;
+    color: #d4af37;
+}

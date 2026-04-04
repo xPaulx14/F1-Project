@@ -1,0 +1,120 @@
+/* ── Team Colors ── */
+.ferrari { color: #DC0000; border-color: #DC0000; }
+.red-bull { color: #223267; border-color: #223267; }
+.aston-martin { color: #006F62; border-color: #006F62; }
+.mercedes { color: #00D2BE; border-color: #00D2BE; }
+.mclaren { color: #FF8700; border-color: #FF8700; }
+.alpine { color: #0090FF; border-color: #0090FF; }
+.williams { color: #005AFF; border-color: #005AFF; }
+.haas { color: #B6BABD; border-color: #B6BABD; }
+.audi { color: #9b1c00; border-color: #9b1c00; }
+.vcarb { color: #265ad9; border-color: #265ad9; }
+.caddilac { color: #79797c; border-color: #79797c; }
+
+/* ── Body ── */
+body {
+    margin: 0;
+    font-family: 'Satoshi', sans-serif;
+    background: #0D0C11;
+    padding: 20px;
+    padding-top: 80px;
+    box-sizing: border-box;
+    font-size: large;
+    overflow-y: scroll;
+}
+
+/* ── Navbar ── */
+.navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #13111A;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.nav-left {
+    flex: 1;
+}
+
+.nav-center {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-center a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    display: block;
+}
+
+.nav-center a:hover {
+    color: #D4AF37;
+}
+
+.nav-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-right: 10px;
+}
+
+.nav-right a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+.nav-right a:hover {
+    color: #D4AF37;
+}
+
+.nav-center a.active-navbar {
+    text-shadow: 0 8px 16px rgba(212, 175, 55, 1);
+    color: #D4AF37;
+}
+
+/* ── Navbar User Box ── */
+.nav-username {
+    color: #D4AF37;
+}
+
+#logout-btn {
+    background: transparent;
+    border: 1px solid #D4AF37;
+    color: #D4AF37;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Satoshi', sans-serif;
+}
+
+#logout-btn:hover {
+    background: #D4AF37;
+    color: #0D0C11;
+}
+
+/* ── Headings ── */
+h2 {
+    color: #D4AF37;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
