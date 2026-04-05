@@ -2,3 +2,7 @@ const SUPABASE_URL = 'https://izhuvoetfqqkzoezwwdu.supabase.co'
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml6aHV2b2V0ZnFxa3pvZXp3d2R1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzUzMDE3MTksImV4cCI6MjA5MDg3NzcxOX0.F8fI84GzNOxSregQIp34njYdcbk06Cc5qTJ0oH6nJDE'
 
 const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
+
+var base = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+    ? ''
+    : '/F1-Project'

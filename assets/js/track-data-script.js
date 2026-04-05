@@ -1,4 +1,4 @@
-fetch('./assets/data/track-data.json')
+fetch(`${base}/assets/data/track-data.json`)
     .then(response => response.json())
     .then(data => {
         console.log(data);

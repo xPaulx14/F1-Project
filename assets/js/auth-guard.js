@@ -1,7 +1,6 @@
 document.body.style.visibility = 'hidden'
 
 ;(async () => {
-    const base = '/F1-Project'
     const { data } = await supabaseClient.auth.getSession()
 
     if (!data.session) {

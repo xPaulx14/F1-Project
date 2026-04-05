@@ -5,6 +5,11 @@
     padding: 20px;
     margin: 0 auto;
     justify-content: center;
+    visibility: hidden;
+}
+
+.grid-container.loaded {
+    visibility: visible;
 }
 
 .driver-card {

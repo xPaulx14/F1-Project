@@ -26,6 +26,7 @@ fetch('https://api.openf1.org/v1/championship_drivers?session_key=latest')
             }
         });
 
+
         const grid = document.querySelector('.grid-container');
         const cards = Array.from(document.querySelectorAll('.driver-card'));
 
@@ -34,4 +35,5 @@ fetch('https://api.openf1.org/v1/championship_drivers?session_key=latest')
         });
 
         cards.forEach(card => grid.appendChild(card));
+        grid.classList.add('loaded');
     });

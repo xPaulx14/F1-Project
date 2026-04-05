@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/profile.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400&display=swap" rel="stylesheet">
+</head>
+
+<body style="visibility: hidden">
+
+    <div id="navbar-placeholder"></div>
+
+    <div class="profile-container">
+        <h2>My Profile</h2>
+
+        <div class="profile-info">
+            <p>Username: <span id="current-username"></span></p>
+            <p>Email: <span id="current-email"></span></p>
+        </div>
+
+        <div class="profile-section">
+            <h3>Change Username</h3>
+            <input type="text" id="new-username" placeholder="New Username">
+            <button id="update-username-btn">Update Username</button>
+            <p id="username-message"></p>
+        </div>
+
+        <div class="profile-section">
+            <h3>Change Email</h3>
+            <input type="email" id="new-email" placeholder="New Email">
+            <button id="update-email-btn">Update Email</button>
+            <p id="email-message"></p>
+        </div>
+
+        <div class="profile-section">
+            <h3>Change Password</h3>
+            <input type="password" id="current-password-input" placeholder="Current Password">
+            <input type="password" id="new-password" placeholder="New Password">
+            <button id="update-password-btn">Update Password</button>
+            <p id="password-message"></p>
+        </div>
+
+        <div class="profile-actions">
+            <button id="logout-btn">Logout</button>
+            <button id="delete-btn">Delete Account</button>
+            <p id="delete-message"></p>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="./assets/js/supabase.js"></script>
+    <script src="./assets/js/auth-guard.js"></script>
+    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/profile.js"></script>
+</body>
+</html>

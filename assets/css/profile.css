@@ -1,0 +1,96 @@
+.profile-container{
+    color: white;
+    outline: 2px solid #d4af37;
+    border-radius:15px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #13111a;
+    padding-top: 10px;
+}
+
+.profile-section{
+    color: #d4af37;
+}
+
+.profile-section input{
+    background-color: #13111a;
+    border: 1px solid #d4af37;
+    border-radius: 5px;
+    color: white;
+}
+
+.profile-section input::placeholder{
+    color: white;
+    border-color: white;
+}
+
+#update-username-btn{
+    background-color: #d4af37;
+    border: 1px solid #d4af37;
+    border-radius: 5px;
+}
+
+#update-email-btn{
+    background-color: #d4af37;
+    border: 1px solid #d4af37;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#update-password-btn{
+    background-color: #d4af37;
+    border: 1px solid #d4af37;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#logout-btn{
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+#delete-btn{
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-container {
+    font-size: 1.2rem;
+    margin-top: 5px !important; 
+    max-height: 92vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.profile-container h2 {
+    font-size: 3rem; 
+    margin-top: 0 !important;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.profile-section {
+    margin-bottom: 15px; 
+}
+
+.profile-section input {
+    font-size: 1.1rem; 
+    padding: 10px 16px; 
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+#update-username-btn,
+#update-email-btn,
+#update-password-btn,
+#logout-btn,
+#delete-btn {
+    font-size: 1.1rem; 
+    padding: 10px 24px; 
+    margin-top: 8px; 
+}
+

@@ -90,12 +90,7 @@ body {
     color: #D4AF37;
 }
 
-/* ── Navbar User Box ── */
-.nav-username {
-    color: #D4AF37;
-}
-
-#logout-btn {
+.nav-username{
     background: transparent;
     border: 1px solid #D4AF37;
     color: #D4AF37;
@@ -106,12 +101,6 @@ body {
     font-family: 'Satoshi', sans-serif;
 }
 
-#logout-btn:hover {
-    background: #D4AF37;
-    color: #0D0C11;
-}
-
-/* ── Headings ── */
 h2 {
     color: #D4AF37;
     text-align: center;

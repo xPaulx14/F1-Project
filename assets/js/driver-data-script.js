@@ -1,4 +1,4 @@
-fetch('assets/data/driver-data.json')
+fetch(`${base}/assets/data/driver-data.json`)
     .then(response => response.json())
     .then(data => {
         const cards = document.querySelectorAll('.driver-card');

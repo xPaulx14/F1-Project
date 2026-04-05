@@ -1,5 +1,4 @@
 async function buildNavbar() {
-    const base = '/F1-Project'
     const { data } = await supabaseClient.auth.getSession()
     const session = data.session
 
@@ -15,8 +14,7 @@ async function buildNavbar() {
         const username = profile ? profile.username : 'User'
 
         rightSide = `
-            <span class="nav-username"> ${username}</span>
-            <button id="logout-btn">Logout</button>
+            <a href="${base}/profile.html" class="nav-username">${username}</a>
         `
     } else {
         rightSide = `<a href="${base}/login.html">Register</a>`
@@ -47,13 +45,11 @@ async function buildNavbar() {
         }
     })
 
-    const logoutBtn = document.getElementById('logout-btn')
-    if (logoutBtn) {
-        logoutBtn.addEventListener('click', async () => {
-            await supabaseClient.auth.signOut()
-            window.location.href = `${base}/index.html`
-        })
-    }
+    const profileLink = document.querySelector('.nav-username')
+    if (profileLink && currentPage.endsWith('profile.html')) {
+        profileLink.style.textShadow = '0 8px 16px rgba(212, 175, 55, 1)'
+        profileLink.style.color = '#D4AF37'
+}
 }
 
 buildNavbar()
