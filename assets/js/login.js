@@ -5,6 +5,12 @@ if (document.getElementById('login-form')) {
     const showLogin = document.getElementById('show-login')
     const showRegister = document.getElementById('show-register')
 
+    const params = new URLSearchParams(window.location.search)
+    if (params.get('redirect')) {
+    document.getElementById('auth-message').textContent = 'Du musst eingeloggt sein um diese Seite zu sehen.'
+    document.getElementById('auth-message-login').textContent = 'Du musst eingeloggt sein um diese Seite zu sehen.'
+    }
+
     showLogin.addEventListener('click', () => {
         registerForm.style.display = 'none'
         loginForm.style.display = 'flex'

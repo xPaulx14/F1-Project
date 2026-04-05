@@ -101,6 +101,13 @@ body {
     font-family: 'Satoshi', sans-serif;
 }
 
+.nav-right a {
+    border: 1px solid #D4AF37;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #D4AF37;
+}
+
 h2 {
     color: #D4AF37;
     text-align: center;

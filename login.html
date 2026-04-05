@@ -11,9 +11,9 @@
 <body>
     <div id="navbar-placeholder"></div>
 
-    <!-- Register Formular (wird zuerst angezeigt) -->
     <div class="login" id="register-form">
         <h2>Register</h2>
+        <p id="auth-message"></p>
         <label for="register-username">Username</label>
         <input type="text" id="register-username" placeholder="Username" required>
 
@@ -28,9 +28,9 @@
         <p id="register-message"></p>
     </div>
 
-    <!-- Login Formular (versteckt am Anfang) -->
     <div class="login" id="login-form" style="display: none;">
         <h2>Login</h2>
+        <p id="auth-message-login"></p>
         <label for="login-email">Email</label>
         <input type="email" id="login-email" placeholder="Email" required>
 

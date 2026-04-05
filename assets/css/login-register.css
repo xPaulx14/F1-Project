@@ -9,3 +9,101 @@
     background-color: #13111a;
     color: #d4af37;
 }
+
+.login input{
+    background-color: #13111a;
+    border: 1px solid #d4af37;
+    border-radius: 5px;
+    color: white;
+}
+
+.login input::placeholder{
+    color: white;
+    border-color: white;
+}
+
+#show-register{
+    text-decoration: none;
+    color: white;
+}
+
+#show-login{
+    text-decoration: none;
+    color: white;
+}
+
+/* =========================================
+   HINZUGEFÜGTER CODE - GROSS & FIX FÜR LINKS
+   ========================================= */
+
+.login {
+    font-size: 1.2rem;
+    gap: 16px !important;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+    margin: 10px auto;
+}
+
+/* Macht die Eingabefelder größer */
+.login input {
+    font-size: 1.1rem;
+    padding: 12px 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Login-Button Styling */
+.login button {
+    font-size: 1.1rem;
+    padding: 12px;
+    background-color: #d4af37;
+    border: 1px solid #d4af37;
+    border-radius: 5px;
+    color: #13111a;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* FIX FÜR DIE LINKS UNTEN */
+/* Wir stylen den Text "Already have an account?" und die Links zusammen */
+.login p, 
+.login .footer-text { 
+    font-size: 1rem;
+    color: #d4af37; /* Goldene Farbe für den Fragetext */
+    text-align: center;
+    margin-top: 15px;
+}
+
+#show-register, #show-login {
+    font-size: 1rem;
+    color: white !important; /* Der Link selbst bleibt weiß */
+    text-decoration: underline; /* Unterstrichen, damit man sieht, dass es ein Link ist */
+    margin-left: 5px; /* Kleiner Abstand zum Text davor */
+    display: inline-block; /* Verhindert, dass der Link in eine neue Zeile springt */
+}
+
+/* Falls du ein h2 drin hast */
+.login h2 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Richtet den Text und Link wieder linksbündig aus */
+.login p, 
+#show-register, 
+#show-login {
+    text-align: left; /* Erzwingt Linksbündigkeit */
+    align-self: flex-start;      /* Verhindert, dass Flexbox es in die Mitte schiebt */
+    margin-left: 0;              /* Entfernt eventuelle Abstände links */
+    display: inline-block;       /* Hält Text und Link in einer Zeile */
+}
+
+#auth-message, #auth-message-login {
+    text-align: center;
+    width: 100%;
+    color: white;
+}

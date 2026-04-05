@@ -28,6 +28,7 @@ async function buildNavbar() {
                     <a href="${base}/index.html">Home</a>
                     <a href="${base}/drivers.html">Drivers</a>
                     <a href="${base}/tracks.html">Tracks</a>
+                    <a href="${base}/teams.html">Teams</a>
                 </li>
                 <li class="nav-right">
                     ${rightSide}
@@ -49,7 +50,13 @@ async function buildNavbar() {
     if (profileLink && currentPage.endsWith('profile.html')) {
         profileLink.style.textShadow = '0 8px 16px rgba(212, 175, 55, 1)'
         profileLink.style.color = '#D4AF37'
-}
+    }
+
+    const registerLink = document.querySelector('.nav-right a')
+    if (registerLink && currentPage.endsWith('login.html')) {
+    registerLink.style.textShadow = '0 8px 16px rgba(212, 175, 55, 1)'
+    registerLink.style.color = '#D4AF37'
+    }
 }
 
 buildNavbar()
