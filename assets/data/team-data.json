@@ -1,0 +1,79 @@
+{
+  "ferrari": {
+    "constructors_championships": 16,
+    "driver_championships": 15,
+    "wins": 243,
+    "team_principal": "Frederic Vasseur",
+    "drivers": ["Charles Leclerc", "Lewis Hamilton"]
+  },
+  "red-bull": {
+    "constructors_championships": 6,
+    "driver_championships": 8,
+    "wins": 122,
+    "team_principal": "Christian Horner",
+    "drivers": ["Max Verstappen", "Isack Hadjar"]
+  },
+  "mclaren": {
+    "constructors_championships": 9,
+    "driver_championships": 12,
+    "wins": 183,
+    "team_principal": "Andrea Stella",
+    "drivers": ["Lando Norris", "Oscar Piastri"]
+  },
+  "mercedes": {
+    "constructors_championships": 8,
+    "driver_championships": 9,
+    "wins": 125,
+    "team_principal": "Toto Wolff",
+    "drivers": ["George Russell", "Andrea Kimi Antonelli"]
+  },
+  "aston-martin": {
+    "constructors_championships": 0,
+    "driver_championships": 0,
+    "wins": 0,
+    "team_principal": "Andy Cowell",
+    "drivers": ["Fernando Alonso", "Lance Stroll"]
+  },
+  "williams": {
+    "constructors_championships": 9,
+    "driver_championships": 7,
+    "wins": 114,
+    "team_principal": "James Vowles",
+    "drivers": ["Carlos Sainz", "Alexander Albon"]
+  },
+  "alpine": {
+    "constructors_championships": 2,
+    "driver_championships": 2,
+    "wins": 21,
+    "team_principal": "Oliver Oakes",
+    "drivers": ["Pierre Gasly", "Franco Colapinto"]
+  },
+  "haas": {
+    "constructors_championships": 0,
+    "driver_championships": 0,
+    "wins": 0,
+    "team_principal": "Ayao Komatsu",
+    "drivers": ["Esteban Ocon", "Oliver Bearman"]
+  },
+  "audi": {
+    "constructors_championships": 0,
+    "driver_championships": 0,
+    "wins": 0,
+    "team_principal": "Jonathan Wheatley",
+    "drivers": ["Nico Hülkenberg", "Gabriel Bortoleto"]
+  },
+  "vcarb": {
+    "constructors_championships": 0,
+    "driver_championships": 0,
+    "wins": 2,
+    "team_principal": "Laurent Mekies",
+    "drivers": ["Liam Lawson", "Arvid Lindblad"]
+  },
+  "caddilac": {
+    "constructors_championships": 0,
+    "driver_championships": 0,
+    "wins": 0,
+    "team_principal": "Graeme Lowdon",
+    "drivers": ["Sergio Perez", "Valtteri Bottas"]
+  }
+}

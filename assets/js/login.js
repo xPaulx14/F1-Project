@@ -7,8 +7,8 @@ if (document.getElementById('login-form')) {
 
     const params = new URLSearchParams(window.location.search)
     if (params.get('redirect')) {
-    document.getElementById('auth-message').textContent = 'Du musst eingeloggt sein um diese Seite zu sehen.'
-    document.getElementById('auth-message-login').textContent = 'Du musst eingeloggt sein um diese Seite zu sehen.'
+    document.getElementById('auth-message').textContent = 'You must be logged in to view this page.'
+    document.getElementById('auth-message-login').textContent = 'You must be logged in to view this page.'
     }
 
     showLogin.addEventListener('click', () => {

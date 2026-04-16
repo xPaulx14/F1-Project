@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Project</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/teams.css">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400&display=swap" rel="stylesheet">
+</head>
+<body style="visibility: hidden;">
+
+    <div id="navbar-placeholder"></div>
+
+    <h2>2026 F1 Teams Standings and all Time Stats</h2>
+
+    <div class="grid-container">
+
+        <!-- Ferrari -->
+        <div class="team-card ferrari" data-team="ferrari">
+            <div class="team-card-rank-info"><span class="team-ranking-number"></span></div>
+            <div class="card-header-info">
+                <img class="team-flag" src="assets/flags/it.svg" alt="Italy" width="24" height="16">
+            </div>
+            <img src="assets/images/Ferrari/Charles_Leclerc.png" alt="Ferrari" width="300" height="250">
+            <div class="overlay-team"><div class="team-text"></div></div>
+            <div class="team-name ferrari">
+                <h4> Scuderia Ferrari HP</h4>
+                <p>Since: 1950</p>
+            </div>
+        </div>
+
+        <!-- Red Bull -->
+        <div class="team-card red-bull" data-team="red-bull">
+            <div class="team-card-rank-info"><span class="team-ranking-number"></span></div>
+            <div class="card-header-info">
+                <img class="team-flag" src="assets/flags/gb.svg" alt="Great-Britain" width="24" height="16">
+            </div>
+            <img src="assets/images/Ferrari/Charles_Leclerc.png" alt="Red Bull" width="300" height="250">
+            <div class="overlay-team"><div class="team-text"></div></div>
+            <div class="team-name red-bull">
+                <h4>Oracle Red Bull Racing</h4>
+                <p>Since: 2005</p>
+            </div>
+        </div>
+
+        <!-- McLaren -->
+        <div class="team-card mclaren" data-team="mclaren">
+            <div class="team-card-rank-info"><span class="team-ranking-number"></span></div>
+            <div class="card-header-info">
+                <img class="team-flag" src="assets/flags/gb.svg" alt="Great Britain" width="24" height="16">
+            </div>
+            <img src="assets/images/Ferrari/Charles_Leclerc.png" alt="McLaren" width="300" height="250">
+            <div class="overlay-team"><div class="team-text"></div></div>
+            <div class="team-name mclaren">
+                <h4>McLaren Formula 1 Team</h4>
+                <p>Since: 1966</p>
+            </div>
+        </div>
+
+        <!-- Mercedes -->
+        <div class="team-card mercedes" data-team="mercedes">
+            <div class="team-card-rank-info"><span class="team-ranking-number"></span></div>
+            <div class="card-header-info">
+                <img class="team-flag" src="assets/flags/gb.svg" alt="Great-Britain" width="24" height="16">
+            </div>
+            <img src="assets/images/Ferrari/Charles_Leclerc.png" alt="Mercedes" width="300" height="250">
+            <div class="overlay-team"><div class="team-text"></div></div>
+            <div class="team-name mercedes">
+                <h4>Mercedes-AMG Petronas F1 Team</h4>
+                <p>Since: 1954</p>
+            </div>
+        </div>
+
+        <!-- Aston Martin -->
+        <div class="team-card aston-martin" data-team="aston-martin">
+            <div class="team-card-rank-info"><span class="team-ranking-number"></span></div>
+            <div class="card-header-info">
+                <img class="team-flag" src="assets/flags/gb.svg" alt="Great Britain" width="24" height="16">
+            </div>
+            <img src="assets/images/Ferrari/Charles_Leclerc.png" alt="Aston Martin" width="300" height="250">
+            <div class="overlay-team"><div class="team-text"></div></div>
+            <div class="team-name aston-martin">
+                <h4>Aston Martin Aramco F1 Team</h4>
+                <p>Since: 2021</p>
+            </div>
+        </div>
+
+        <!-- Williams -->
+        <div class="team-card williams" data-team="williams">
+            <div class="team-card-rank-info"><span class="team-ranking-number"></span></div>
+            <div class="card-header-info">
+                <img class="team-flag" src="assets/flags/gb.svg" alt="Great Britain" width="24" height="16">
+            </div>
+            <img src="assets/images/Ferrari/Charles_Leclerc.png" alt="Williams" width="300" height="250">
+            <div class="overlay-team"><div class="team-text"></div></div>
+            <div class="team-name williams">
+                <h4>Williams Racing</h4>
+                <p>Since: 1977</p>
+            </div>
+        </div>
+
+        <!-- Alpine -->
+        <div class="team-card alpine" data-team="alpine">
+            <div class="team-card-rank-info"><span class="team-ranking-number"></span></div>
+            <div class="card-header-info">
+                <img class="team-flag" src="assets/flags/fr.svg" alt="France" width="24" height="16">
+            </div>
+            <img src="assets/images/Ferrari/Charles_Leclerc.png" alt="Alpine" width="300" height="250">
+            <div class="overlay-team"><div class="team-text"></div></div>
+            <div class="team-name alpine">
+                <h4>Alpine F1 Team</h4>
+                <p>Since: 2021</p>
+            </div>
+        </div>
+
+        <!-- Haas -->
+        <div class="team-card haas" data-team="haas">
+            <div class="team-card-rank-info"><span class="team-ranking-number"></span></div>
+            <div class="card-header-info">
+                <img class="team-flag" src="assets/flags/us.svg" alt="United States" width="24" height="16">
+            </div>
+            <img src="assets/images/Ferrari/Charles_Leclerc.png" alt="Haas" width="300" height="250">
+            <div class="overlay-team"><div class="team-text"></div></div>
+            <div class="team-name haas">
+                <h4>Haas F1 Team</h4>
+                <p>Since: 2016</p>
+            </div>
+        </div>
+
+        <!-- Audi -->
+        <div class="team-card audi" data-team="audi">
+            <div class="team-card-rank-info"><span class="team-ranking-number"></span></div>
+            <div class="card-header-info">
+                <img class="team-flag" src="assets/flags/de.svg" alt="Germany" width="24" height="16">
+            </div>
+            <img src="assets/images/Ferrari/Charles_Leclerc.png" alt="Audi" width="300" height="250">
+            <div class="overlay-team"><div class="team-text"></div></div>
+            <div class="team-name audi">
+                <h4>Audi F1 Team</h4>
+                <p>Since: 2026</p>
+            </div>
+        </div>
+
+        <!-- Racing Bulls -->
+        <div class="team-card vcarb" data-team="vcarb">
+            <div class="team-card-rank-info"><span class="team-ranking-number"></span></div>
+            <div class="card-header-info">
+                <img class="team-flag" src="assets/flags/it.svg" alt="Italia" width="24" height="16">
+            </div>
+            <img src="assets/images/Ferrari/Charles_Leclerc.png" width="300" height="250">
+            <div class="overlay-team"><div class="team-text"></div></div>
+            <div class="team-name vcarb">
+                <h4>Visa Cash App Racing Bulls</h4>
+                <p>Since: 2006</p>
+            </div>
+        </div>
+
+        <!-- Cadillac -->
+        <div class="team-card caddilac" data-team="caddilac">
+            <div class="team-card-rank-info"><span class="team-ranking-number"></span></div>
+            <div class="card-header-info">
+                <img class="team-flag" src="assets/flags/us.svg" alt="United States" width="24" height="16">
+            </div>
+            <img src="assets/images/Ferrari/Charles_Leclerc.png" alt="Cadillac" width="300" height="250">
+            <div class="overlay-team"><div class="team-text"></div></div>
+            <div class="team-name caddilac">
+                <h4>Cadillac F1 Team</h4>
+                <p>Since: 2026</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="./assets/js/supabase.js"></script>
+    <script src="./assets/js/auth-guard.js"></script>
+    <script src="./assets/js/team-data-script.js"></script>
+    <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/ranking-team.js"></script>
+</body>
+</html>

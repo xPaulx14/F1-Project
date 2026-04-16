@@ -7,7 +7,14 @@ const driverNumberMap = {
     11: 'perez', 77: 'bottas'
 };
 
-fetch('https://api.openf1.org/v1/championship_drivers?session_key=latest')
+fetch('https://api.openf1.org/v1/sessions?session_type=Race&year=2026')
+    .then(response => response.json())
+    .then(sessions => {
+        const now = new Date()
+        const past = sessions.filter(s => new Date(s.date_end) < now)
+        const latest = past[past.length - 1]
+        return fetch(`https://api.openf1.org/v1/championship_drivers?session_key=${latest.session_key}`)
+    })
     .then(response => response.json())
     .then(data => {
         data.forEach(entry => {
@@ -21,11 +28,10 @@ fetch('https://api.openf1.org/v1/championship_drivers?session_key=latest')
                     if (entry.position_current === 1) rankSpan.classList.add('rank-gold');
                     else if (entry.position_current === 2) rankSpan.classList.add('rank-silver');
                     else if (entry.position_current === 3) rankSpan.classList.add('rank-bronze');
-                    else { rankSpan.classList.add('rank'); }
+                    else rankSpan.classList.add('rank');
                 }
             }
         });
-
 
         const grid = document.querySelector('.grid-container');
         const cards = Array.from(document.querySelectorAll('.driver-card'));
