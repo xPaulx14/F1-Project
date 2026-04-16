@@ -16,16 +16,28 @@ fetch('https://api.openf1.org/v1/sessions?session_type=Race&year=2026')
     .then(response => response.json())
     .then(sessions => {
         const past = sessions.filter(s => new Date(s.date_end) < new Date(Date.now() - 24 * 60 * 60 * 1000))
-        const latest = past[past.length - 1]
-        return fetch(`https://api.openf1.org/v1/championship_teams?session_key=${latest.session_key}`)
+
+        const trySession = (index) => {
+            if (index < 0) return Promise.reject('No valid session found')
+            const session = past[index]
+            return fetch(`https://api.openf1.org/v1/championship_teams?session_key=${session.session_key}`)
+                .then(res => {
+                    if (!res.ok) return trySession(index - 1)
+                    return res.json()
+                })
+                .then(data => {
+                    if (!Array.isArray(data) || data.length === 0) return trySession(index - 1)
+                    return data
+                })
+        }
+        return trySession(past.length - 1)
     })
-    .then(response => response.json())
     .then(data => {
         data.forEach(entry => {
             const teamKey = teamNameMap[entry.team_name]
             const card = document.querySelector(`[data-team="${teamKey}"]`)
             if (card) {
-            const rankSpan = card.querySelector('.team-ranking-number')
+                const rankSpan = card.querySelector('.team-ranking-number')
                 if (rankSpan) {
                     rankSpan.textContent = `#${entry.position_current}`
                     card.setAttribute('data-rank', entry.position_current)
