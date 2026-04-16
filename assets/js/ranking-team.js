@@ -15,8 +15,7 @@ const teamNameMap = {
 fetch('https://api.openf1.org/v1/sessions?session_type=Race&year=2026')
     .then(response => response.json())
     .then(sessions => {
-        const now = new Date()
-        const past = sessions.filter(s => new Date(s.date_end) < now)
+        const past = sessions.filter(s => new Date(s.date_end) < new Date(Date.now() - 24 * 60 * 60 * 1000))
         const latest = past[past.length - 1]
         return fetch(`https://api.openf1.org/v1/championship_teams?session_key=${latest.session_key}`)
     })
